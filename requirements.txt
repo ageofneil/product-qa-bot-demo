@@ -1,0 +1,7 @@
+streamlit
+openai
+numpy
+pandas
+annoy
+python-dotenv
+flask
