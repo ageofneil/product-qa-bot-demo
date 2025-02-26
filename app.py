@@ -94,6 +94,7 @@ selected_product_id = product_ids[product_names.index(selected_product_name)]
 
 # Show available questions for this product
 st.subheader(f"💡 Question Space for: {selected_product_name}")
+st.write("If your question is related to the ones listed above, an answer will be provided. If not, you'll receive a generic response.")
 available_questions = df_qa[df_qa["product_id"] == selected_product_id]["question"].tolist()
 for q in available_questions:
     st.markdown(f"- **{q}**")
