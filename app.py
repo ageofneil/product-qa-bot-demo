@@ -93,7 +93,7 @@ selected_product_name = st.selectbox("Select a product:", product_names)
 selected_product_id = product_ids[product_names.index(selected_product_name)]
 
 # Show available questions for this product
-st.subheader(f"💡 Available Questions for {selected_product_name}")
+st.subheader(f"💡 Question Space for: {selected_product_name}")
 available_questions = df_qa[df_qa["product_id"] == selected_product_id]["question"].tolist()
 for q in available_questions:
     st.markdown(f"- **{q}**")
